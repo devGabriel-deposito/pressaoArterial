@@ -1,108 +1,110 @@
 $(document).ready(function () {
-    //PRIMEIRO DIA
-    $('#primeiroDiaPrimeiraMedidaUp').val(15);
-    $('#primeiroDiaSegundaMedidaUp').val(11);
-    $('#primeiroDiaTerceiraMedidaUp').val(12);
-    $('#primeiroDiaQuartaMedidaUp').val(10);
-    $('#primeiroDiaQuintaMedidaUp').val(10);
-    $('#primeiroDiaSextaMedidaUp').val(10);
-
-    $('#primeiroDiaPrimeiraMedidaDown').val(8);
-    $('#primeiroDiaSegundaMedidaDown').val(9);
-    $('#primeiroDiaTerceiraMedidaDown').val(7);
-    $('#primeiroDiaQuartaMedidaDown').val(6);
-    $('#primeiroDiaQuintaMedidaDown').val(8);
-    $('#primeiroDiaSextaMedidaDown').val(6);
-
-    //SEGUNDO DIA
-    $('#segundoDiaPrimeiraMedidaUp').val(9);
-    $('#segundoDiaSegundaMedidaUp').val(11);
-    $('#segundoDiaTerceiraMedidaUp').val(11);
-    $('#segundoDiaQuartaMedidaUp').val(10);
-    $('#segundoDiaQuintaMedidaUp').val(12);
-    $('#segundoDiaSextaMedidaUp').val(12);
-
-    $('#segundoDiaPrimeiraMedidaDown').val(6);
-    $('#segundoDiaSegundaMedidaDown').val(7);
-    $('#segundoDiaTerceiraMedidaDown').val(6);
-    $('#segundoDiaQuartaMedidaDown').val(7);
-    $('#segundoDiaQuintaMedidaDown').val(7);
-    $('#segundoDiaSextaMedidaDown').val(8);
-
-    //TERCEIRO DIA
-    $('#terceiroDiaPrimeiraMedidaUp').val(15);
-    $('#terceiroDiaSegundaMedidaUp').val(11);
-    $('#terceiroDiaTerceiraMedidaUp').val(12);
-    $('#terceiroDiaQuartaMedidaUp').val(10);
-    $('#terceiroDiaQuintaMedidaUp').val(10);
-    $('#terceiroDiaSextaMedidaUp').val(10);
-
-    $('#terceiroDiaPrimeiraMedidaDown').val(8);
-    $('#terceiroDiaSegundaMedidaDown').val(9);
-    $('#terceiroDiaTerceiraMedidaDown').val(7);
-    $('#terceiroDiaQuartaMedidaDown').val(6);
-    $('#terceiroDiaQuintaMedidaDown').val(8);
-    $('#terceiroDiaSextaMedidaDown').val(6);
-
-    //QUARTO DIA
-    $('#quartoDiaPrimeiraMedidaUp').val(9);
-    $('#quartoDiaSegundaMedidaUp').val(11);
-    $('#quartoDiaTerceiraMedidaUp').val(11);
-    $('#quartoDiaQuartaMedidaUp').val(10);
-    $('#quartoDiaQuintaMedidaUp').val(12);
-    $('#quartoDiaSextaMedidaUp').val(11);
-
-    $('#quartoDiaPrimeiraMedidaDown').val(6);
-    $('#quartoDiaSegundaMedidaDown').val(7);
-    $('#quartoDiaTerceiraMedidaDown').val(6);
-    $('#quartoDiaQuartaMedidaDown').val(7);
-    $('#quartoDiaQuintaMedidaDown').val(7);
-    $('#quartoDiaSextaMedidaDown').val(8);
-
-    //QUINTO DIA
-    $('#quintoDiaPrimeiraMedidaUp').val(15);
-    $('#quintoDiaSegundaMedidaUp').val(11);
-    $('#quintoDiaTerceiraMedidaUp').val(12);
-    $('#quintoDiaQuartaMedidaUp').val(10);
-    $('#quintoDiaQuintaMedidaUp').val(10);
-    $('#quintoDiaSextaMedidaUp').val(10);
-
-    $('#quintoDiaPrimeiraMedidaDown').val(8);
-    $('#quintoDiaSegundaMedidaDown').val(9);
-    $('#quintoDiaTerceiraMedidaDown').val(7);
-    $('#quintoDiaQuartaMedidaDown').val(6);
-    $('#quintoDiaQuintaMedidaDown').val(8);
-    $('#quintoDiaSextaMedidaDown').val(6);
-
-    //SEXTO DIA
-    $('#sextoDiaPrimeiraMedidaUp').val(9);
-    $('#sextoDiaSegundaMedidaUp').val(11);
-    $('#sextoDiaTerceiraMedidaUp').val(11);
-    $('#sextoDiaQuartaMedidaUp').val(10);
-    $('#sextoDiaQuintaMedidaUp').val(12);
-    $('#sextoDiaSextaMedidaUp').val(11);
-
-    $('#sextoDiaPrimeiraMedidaDown').val(6);
-    $('#sextoDiaSegundaMedidaDown').val(7);
-    $('#sextoDiaTerceiraMedidaDown').val(6);
-    $('#sextoDiaQuartaMedidaDown').val(7);
-    $('#sextoDiaQuintaMedidaDown').val(7);
-    $('#sextoDiaSextaMedidaDown').val(8);
-
-    //SETIMO DIA
-    $('#setimoDiaPrimeiraMedidaUp').val(15);
-    $('#setimoDiaSegundaMedidaUp').val(11);
-    $('#setimoDiaTerceiraMedidaUp').val(12);
-    $('#setimoDiaQuartaMedidaUp').val(10);
-    $('#setimoDiaQuintaMedidaUp').val(10);
-    $('#setimoDiaSextaMedidaUp').val(10);
-
-    $('#setimoDiaPrimeiraMedidaDown').val(8);
-    $('#setimoDiaSegundaMedidaDown').val(9);
-    $('#setimoDiaTerceiraMedidaDown').val(7);
-    $('#setimoDiaQuartaMedidaDown').val(6);
-    $('#setimoDiaQuintaMedidaDown').val(8);
-    $('#setimoDiaSextaMedidaDown').val(6);
+    /*
+        //PRIMEIRO DIA
+        $('#primeiroDiaPrimeiraMedidaUp').val(15);
+        $('#primeiroDiaSegundaMedidaUp').val(11);
+        $('#primeiroDiaTerceiraMedidaUp').val(12);
+        $('#primeiroDiaQuartaMedidaUp').val(10);
+        $('#primeiroDiaQuintaMedidaUp').val(10);
+        $('#primeiroDiaSextaMedidaUp').val(10);
+    
+        $('#primeiroDiaPrimeiraMedidaDown').val(8);
+        $('#primeiroDiaSegundaMedidaDown').val(9);
+        $('#primeiroDiaTerceiraMedidaDown').val(7);
+        $('#primeiroDiaQuartaMedidaDown').val(6);
+        $('#primeiroDiaQuintaMedidaDown').val(8);
+        $('#primeiroDiaSextaMedidaDown').val(6);
+    
+        //SEGUNDO DIA
+        $('#segundoDiaPrimeiraMedidaUp').val(9);
+        $('#segundoDiaSegundaMedidaUp').val(11);
+        $('#segundoDiaTerceiraMedidaUp').val(11);
+        $('#segundoDiaQuartaMedidaUp').val(10);
+        $('#segundoDiaQuintaMedidaUp').val(12);
+        $('#segundoDiaSextaMedidaUp').val(12);
+    
+        $('#segundoDiaPrimeiraMedidaDown').val(6);
+        $('#segundoDiaSegundaMedidaDown').val(7);
+        $('#segundoDiaTerceiraMedidaDown').val(6);
+        $('#segundoDiaQuartaMedidaDown').val(7);
+        $('#segundoDiaQuintaMedidaDown').val(7);
+        $('#segundoDiaSextaMedidaDown').val(8);
+    
+        //TERCEIRO DIA
+        $('#terceiroDiaPrimeiraMedidaUp').val(15);
+        $('#terceiroDiaSegundaMedidaUp').val(11);
+        $('#terceiroDiaTerceiraMedidaUp').val(12);
+        $('#terceiroDiaQuartaMedidaUp').val(10);
+        $('#terceiroDiaQuintaMedidaUp').val(10);
+        $('#terceiroDiaSextaMedidaUp').val(10);
+    
+        $('#terceiroDiaPrimeiraMedidaDown').val(8);
+        $('#terceiroDiaSegundaMedidaDown').val(9);
+        $('#terceiroDiaTerceiraMedidaDown').val(7);
+        $('#terceiroDiaQuartaMedidaDown').val(6);
+        $('#terceiroDiaQuintaMedidaDown').val(8);
+        $('#terceiroDiaSextaMedidaDown').val(6);
+    
+        //QUARTO DIA
+        $('#quartoDiaPrimeiraMedidaUp').val(9);
+        $('#quartoDiaSegundaMedidaUp').val(11);
+        $('#quartoDiaTerceiraMedidaUp').val(11);
+        $('#quartoDiaQuartaMedidaUp').val(10);
+        $('#quartoDiaQuintaMedidaUp').val(12);
+        $('#quartoDiaSextaMedidaUp').val(11);
+    
+        $('#quartoDiaPrimeiraMedidaDown').val(6);
+        $('#quartoDiaSegundaMedidaDown').val(7);
+        $('#quartoDiaTerceiraMedidaDown').val(6);
+        $('#quartoDiaQuartaMedidaDown').val(7);
+        $('#quartoDiaQuintaMedidaDown').val(7);
+        $('#quartoDiaSextaMedidaDown').val(8);
+    
+        //QUINTO DIA
+        $('#quintoDiaPrimeiraMedidaUp').val(15);
+        $('#quintoDiaSegundaMedidaUp').val(11);
+        $('#quintoDiaTerceiraMedidaUp').val(12);
+        $('#quintoDiaQuartaMedidaUp').val(10);
+        $('#quintoDiaQuintaMedidaUp').val(10);
+        $('#quintoDiaSextaMedidaUp').val(10);
+    
+        $('#quintoDiaPrimeiraMedidaDown').val(8);
+        $('#quintoDiaSegundaMedidaDown').val(9);
+        $('#quintoDiaTerceiraMedidaDown').val(7);
+        $('#quintoDiaQuartaMedidaDown').val(6);
+        $('#quintoDiaQuintaMedidaDown').val(8);
+        $('#quintoDiaSextaMedidaDown').val(6);
+    
+        //SEXTO DIA
+        $('#sextoDiaPrimeiraMedidaUp').val(9);
+        $('#sextoDiaSegundaMedidaUp').val(11);
+        $('#sextoDiaTerceiraMedidaUp').val(11);
+        $('#sextoDiaQuartaMedidaUp').val(10);
+        $('#sextoDiaQuintaMedidaUp').val(12);
+        $('#sextoDiaSextaMedidaUp').val(11);
+    
+        $('#sextoDiaPrimeiraMedidaDown').val(6);
+        $('#sextoDiaSegundaMedidaDown').val(7);
+        $('#sextoDiaTerceiraMedidaDown').val(6);
+        $('#sextoDiaQuartaMedidaDown').val(7);
+        $('#sextoDiaQuintaMedidaDown').val(7);
+        $('#sextoDiaSextaMedidaDown').val(8);
+    
+        //SETIMO DIA
+        $('#setimoDiaPrimeiraMedidaUp').val(15);
+        $('#setimoDiaSegundaMedidaUp').val(11);
+        $('#setimoDiaTerceiraMedidaUp').val(12);
+        $('#setimoDiaQuartaMedidaUp').val(10);
+        $('#setimoDiaQuintaMedidaUp').val(10);
+        $('#setimoDiaSextaMedidaUp').val(10);
+    
+        $('#setimoDiaPrimeiraMedidaDown').val(8);
+        $('#setimoDiaSegundaMedidaDown').val(9);
+        $('#setimoDiaTerceiraMedidaDown').val(7);
+        $('#setimoDiaQuartaMedidaDown').val(6);
+        $('#setimoDiaQuintaMedidaDown').val(8);
+        $('#setimoDiaSextaMedidaDown').val(6);
+    */
 });
 
 function primeiroDia() {
