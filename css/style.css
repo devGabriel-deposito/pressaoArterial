@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+}
+
+.block {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/*add-margin-bottom*/
+.add-margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.add-margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.add-margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.add-margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.add-margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.add-margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.add-margin-bottom-35 {
+    margin-bottom: 35px;
+}
+
+.add-margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.add-margin-bottom-45 {
+    margin-bottom: 45px;
+}
+
+.add-margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+/*add-margin-top*/
+.add-margin-top-5 {
+    margin-top: 5px;
+}
+
+.add-margin-top-10 {
+    margin-top: 10px;
+}
+
+.add-margin-top-15 {
+    margin-top: 15px;
+}
+
+.add-margin-top-20 {
+    margin-top: 20px;
+}
+
+.add-margin-top-25 {
+    margin-top: 25px;
+}
+
+.add-margin-top-30 {
+    margin-top: 30px;
+}
+
+.add-margin-top-35 {
+    margin-top: 35px;
+}
+
+.add-margin-top-40 {
+    margin-top: 40px;
+}
+
+.add-margin-top-45 {
+    margin-top: 45px;
+}
+
+.add-margin-top-50 {
+    margin-top: 50px;
+}
+
+/*add-margin-right*/
+.add-margin-right-5 {
+    margin-right: 5px;
+}
+
+.add-margin-right-10 {
+    margin-right: 10px;
+}
+
+.add-margin-right-15 {
+    margin-right: 15px;
+}
+
+.add-margin-right-20 {
+    margin-right: 20px;
+}
+
+.add-margin-right-25 {
+    margin-right: 25px;
+}
+
+.add-margin-right-30 {
+    margin-right: 30px;
+}
+
+.add-margin-right-35 {
+    margin-right: 35px;
+}
+
+.add-margin-right-40 {
+    margin-right: 40px;
+}
+
+.add-margin-right-45 {
+    margin-right: 45px;
+}
+
+.add-margin-right-50 {
+    margin-right: 50px;
+}
+
+/*add-margin-left*/
+.add-margin-left-5 {
+    margin-left: 5px;
+}
+
+.add-margin-left-10 {
+    margin-left: 10px;
+}
+
+.add-margin-left-15 {
+    margin-left: 15px;
+}
+
+.add-margin-left-20 {
+    margin-left: 20px;
+}
+
+.add-margin-left-25 {
+    margin-left: 25px;
+}
+
+.add-margin-left-30 {
+    margin-left: 30px;
+}
+
+.add-margin-left-35 {
+    margin-left: 35px;
+}
+
+.add-margin-left-40 {
+    margin-left: 40px;
+}
+
+.add-margin-left-45 {
+    margin-left: 45px;
+}
+
+.add-margin-left-50 {
+    margin-left: 50px;
+}

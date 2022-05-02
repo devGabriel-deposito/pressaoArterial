@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pressão arterial</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- PRIMEIRO DIA -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">PRIMEIRO DIA</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>1ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="primeiroDiaPrimeiraMedidaUp"
+                        aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="primeiroDiaPrimeiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>2ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="primeiroDiaSegundaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="primeiroDiaSegundaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>3ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="primeiroDiaTerceiraMedidaUp"
+                        aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="primeiroDiaTerceiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>4ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="primeiroDiaQuartaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="primeiroDiaQuartaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>5ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="primeiroDiaQuintaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="primeiroDiaQuintaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>6ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="primeiroDiaSextaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="primeiroDiaSextaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média (primeiro dia)</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="primeiroDiaMediaUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="primeiroDiaMediaDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="primeiroDia()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEGUNDO DIA -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">SEGUNDO DIA</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>1ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="segundoDiaPrimeiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="segundoDiaPrimeiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>2ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="segundoDiaSegundaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="segundoDiaSegundaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>3ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="segundoDiaTerceiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="segundoDiaTerceiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>4ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="segundoDiaQuartaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="segundoDiaQuartaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>5ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="segundoDiaQuintaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="segundoDiaQuintaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>6ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="segundoDiaSextaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="segundoDiaSextaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média (segundo dia)</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="segundoDiaMediaUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="segundoDiaMediaDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="segundoDia()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TERCEIRO DIA -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">TERCEIRO DIA</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>1ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="terceiroDiaPrimeiraMedidaUp"
+                        aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="terceiroDiaPrimeiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>2ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="terceiroDiaSegundaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="terceiroDiaSegundaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>3ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="terceiroDiaTerceiraMedidaUp"
+                        aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="terceiroDiaTerceiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>4ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="terceiroDiaQuartaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="terceiroDiaQuartaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>5ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="terceiroDiaQuintaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="terceiroDiaQuintaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>6ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="terceiroDiaSextaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="terceiroDiaSextaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média (terceiro dia)</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="terceiroDiaMediaUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="terceiroDiaMediaDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="terceiroDia()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUARTO DIA -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">QUARTO DIA</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>1ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quartoDiaPrimeiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quartoDiaPrimeiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>2ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quartoDiaSegundaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quartoDiaSegundaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>3ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quartoDiaTerceiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quartoDiaTerceiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>4ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quartoDiaQuartaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quartoDiaQuartaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>5ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quartoDiaQuintaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quartoDiaQuintaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>6ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quartoDiaSextaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quartoDiaSextaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média (quarto dia)</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="quartoDiaMediaUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="quartoDiaMediaDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="quartoDia()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUINTO DIA -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">QUINTO DIA</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>1ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quintoDiaPrimeiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quintoDiaPrimeiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>2ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quintoDiaSegundaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quintoDiaSegundaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>3ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quintoDiaTerceiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quintoDiaTerceiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>4ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quintoDiaQuartaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quintoDiaQuartaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>5ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quintoDiaQuintaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quintoDiaQuintaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>6ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="quintoDiaSextaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="quintoDiaSextaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média (quinto dia)</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="quintoDiaMediaUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="quintoDiaMediaDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="quintoDia()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEXTO DIA -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">SEXTO DIA</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>1ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="sextoDiaPrimeiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="sextoDiaPrimeiraMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>2ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="sextoDiaSegundaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="sextoDiaSegundaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>3ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="sextoDiaTerceiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="sextoDiaTerceiraMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>4ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="sextoDiaQuartaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="sextoDiaQuartaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>5ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="sextoDiaQuintaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="sextoDiaQuintaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>6ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="sextoDiaSextaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="sextoDiaSextaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média (sexto dia)</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="sextoDiaMediaUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="sextoDiaMediaDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="sextoDia()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SÉTIMO DIA -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">SÉTIMO DIA</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>1ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="setimoDiaPrimeiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="setimoDiaPrimeiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>2ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="setimoDiaSegundaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="setimoDiaSegundaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>3ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="setimoDiaTerceiraMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="setimoDiaTerceiraMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>4ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="setimoDiaQuartaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="setimoDiaQuartaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>5ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="setimoDiaQuintaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="setimoDiaQuintaMedidaDown" aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>6ª medida</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control" id="setimoDiaSextaMedidaUp" aria-describedby="helpId">
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="number" class="form-control" id="setimoDiaSextaMedidaDown"
+                        aria-describedby="helpId">
+                </div>
+            </div>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média (setimo dia)</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="setimoDiaMediaUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="setimoDiaMediaDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="setimoDia()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MÉDIA GERAL -->
+        <div class="container block add-margin-top-35 add-margin-bottom-35">
+            <h1 class="text-center add-margin-top-15">MÉDIA GERAL</h1>
+
+            <hr>
+
+            <div class="col add-margin-bottom-15">
+                <label>Média geral</label>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="text" class="form-control add-margin-right-5" id="mediaGeralUp"
+                        aria-describedby="helpId" readonly>
+                    <div class="add-margin-left-5 add-margin-right-5">/</div>
+                    <input type="text" class="form-control add-margin-right-5" id="mediaGeralDown"
+                        aria-describedby="helpId" readonly>
+                    <button type="button" class="btn btn-primary" onclick="mediaGeral()">CALCULE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
